@@ -3,42 +3,29 @@ rag_pipeline.py
 ----------------
 글로벌 이커머스 다국어 CS 상담 에이전트 - RAG 파이프라인 핵심 모듈
 
-이 모듈은 노트북(.ipynb)과 Streamlit 앱(app.py)에서 공통으로 사용합니다.
-
-핵심 기능:
-1. 다국어 FAQ 데이터(ko/en/ja/zh) 로드
-2. 다국어 임베딩(sentence-transformers 다국어 모델)으로 벡터스토어 구축
-3. LangChain 기반 RAG 체인 구성 (Claude 모델로 최종 답변 생성)
-4. 사용자가 어떤 언어로 질문하든, 언어에 무관하게 의미 기반 검색 후
-   질문 언어로 답변 + 참고한 원문(source) 언어/내용을 함께 제공
-
 이름:  [학생 이름을 입력하세요]
 학번:  [학번을 입력하세요]
 """
 
 import os
 import pandas as pd
-from langchain.schema import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_core.documents import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_chroma import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_anthropic import ChatAnthropic
-from langchain.prompts import ChatPromptTemplate
-from langchain.schema.runnable import RunnablePassthrough
-from langchain.schema.output_parser import StrOutputParser
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.runnables import RunnablePassthrough
+from langchain_core.output_parsers import StrOutputParser
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "faq_multilingual.csv")
 PERSIST_DIR = os.path.join(os.path.dirname(__file__), "chroma_db")
 
-# 다국어 문장 임베딩 모델 (API 키 불필요, 로컬 다운로드)
 EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-
-# 답변 생성에 사용할 Claude 모델 (Anthropic API 키 필요: ANTHROPIC_API_KEY)
 LLM_MODEL_NAME = "claude-sonnet-4-5-20250929"
 
 
 def load_documents(csv_path: str = DATA_PATH):
-    """다국어 FAQ CSV를 LangChain Document 리스트로 변환합니다."""
     df = pd.read_csv(csv_path)
     documents = []
     for _, row in df.iterrows():
@@ -55,7 +42,6 @@ def load_documents(csv_path: str = DATA_PATH):
 
 
 def build_vectorstore(documents=None, persist_directory: str = PERSIST_DIR):
-    """문서를 청크로 분할하고 다국어 임베딩으로 Chroma 벡터스토어를 생성합니다."""
     if documents is None:
         documents = load_documents()
 
@@ -73,7 +59,6 @@ def build_vectorstore(documents=None, persist_directory: str = PERSIST_DIR):
 
 
 def load_vectorstore(persist_directory: str = PERSIST_DIR):
-    """이미 저장된 벡터스토어가 있으면 불러오고, 없으면 새로 생성합니다."""
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
     if os.path.exists(persist_directory) and os.listdir(persist_directory):
         return Chroma(persist_directory=persist_directory, embedding_function=embeddings)
@@ -107,7 +92,6 @@ def format_docs(docs):
 
 
 def build_rag_chain(vectorstore, k: int = 3):
-    """검색기(retriever) + 프롬프트 + Claude LLM으로 RAG 체인을 구성합니다."""
     retriever = vectorstore.as_retriever(search_kwargs={"k": k})
     prompt = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
 
@@ -127,7 +111,6 @@ def build_rag_chain(vectorstore, k: int = 3):
 
 
 def answer_question(chain, retriever, question: str):
-    """질문에 대한 답변과 함께, 검색에 사용된 원본 FAQ(source) 목록도 반환합니다."""
     sources = retriever.invoke(question)
     answer = chain.invoke(question)
     return answer, sources
