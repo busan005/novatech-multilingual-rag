@@ -1,0 +1,41 @@
+id,language,category,question,answer
+1,ko,반품/환불,구매한 제품을 반품하고 싶은데 절차가 어떻게 되나요?,"제품 수령 후 14일 이내에 마이페이지 > 주문내역에서 반품 신청을 하시면 됩니다. 제품은 미개봉 또는 사용 흔적이 없는 상태여야 하며, 반품 배송비는 단순 변심의 경우 고객 부담입니다. 반품이 승인되면 3~5영업일 이내 환불이 완료됩니다."
+2,ko,반품/환불,해외에서 구매한 제품도 반품이 가능한가요?,"네, 해외 배송 주문도 반품이 가능합니다. 다만 국제 반송 배송비는 고객이 부담하며, 통관 절차로 인해 국내 반품보다 처리 기간이 7~14일 더 소요될 수 있습니다."
+3,ko,보증/AS,제품 보증 기간은 얼마나 되나요?,"모든 노바텍(NovaTech) 정품은 구매일로부터 1년간 무상 보증이 제공됩니다. 배터리 등 소모품은 보증 기간이 6개월로 별도 적용됩니다. 보증서 또는 구매 영수증을 지참하시면 가까운 서비스센터에서 수리 접수가 가능합니다."
+4,ko,보증/AS,해외에서 구매한 제품도 한국 AS센터에서 수리가 가능한가요?,"국가별로 유통 리전이 다르기 때문에 해외 리전 제품은 한국 AS센터에서 수리가 제한될 수 있습니다. 구매하신 국가의 공식 서비스센터를 이용하시거나, 고객센터로 시리얼 번호를 문의하시면 가능 여부를 안내해 드립니다."
+5,ko,배송,해외 배송은 어떤 국가로 가능한가요?,"미국, 일본, 중국, 대만, 베트남, 독일 등 총 32개국으로 배송이 가능합니다. 배송 가능 국가 목록은 결제 페이지에서 실시간으로 확인하실 수 있습니다."
+6,ko,배송,해외 배송 시 관세는 누가 부담하나요?,"관세 및 부가세는 수령하시는 국가의 기준에 따라 수령인이 부담하는 것이 원칙입니다. 일부 국가는 무관세 한도가 있으므로 통관 규정을 사전에 확인하시길 권장드립니다."
+7,ko,제품 사용,블루투스 이어폰이 스마트폰과 페어링이 안 됩니다.,"이어폰 케이스에서 양쪽 이어버드를 꺼낸 상태에서 버튼을 5초간 길게 눌러 LED가 파란색과 흰색으로 번갈아 깜빡이는지 확인해 주세요. 이후 스마트폰 블루투스 설정에서 기존 페어링 기록을 삭제하고 다시 검색하면 대부분 해결됩니다."
+8,ko,제품 사용,공기청정기 필터 교체 주기는 얼마나 되나요?,"일반 가정 기준으로 3~6개월마다 교체를 권장합니다. 반려동물이 있거나 미세먼지가 심한 지역은 2~3개월마다 교체하시는 것이 좋습니다. 필터 교체 알림 기능이 있는 모델은 앱에서 잔여 수명을 확인할 수 있습니다."
+9,ko,계정/결제,비밀번호를 잊어버렸어요.,로그인 화면의 '비밀번호 찾기'를 클릭 후 가입하신 이메일로 재설정 링크를 받아 진행하실 수 있습니다. 링크는 발급 후 30분간 유효합니다.
+10,ko,계정/결제,해외 결제 시 사용 가능한 통화는 무엇인가요?,"USD, JPY, CNY, EUR 결제를 지원하며, 결제 시점의 환율에 따라 원화 기준 청구 금액이 안내됩니다. 카드사 해외 결제 수수료가 별도로 부과될 수 있습니다."
+11,en,Returns/Refunds,How do I return a product I purchased?,"You can request a return within 14 days of receiving the product via My Page > Order History. The item must be unopened or show no signs of use. Return shipping is at the customer's expense for simple change-of-mind returns. Refunds are processed within 3-5 business days after approval."
+12,en,Returns/Refunds,Can I return a product I bought internationally?,"Yes, international orders can be returned. However, the customer is responsible for international return shipping costs, and processing may take an additional 7-14 days due to customs clearance."
+13,en,Warranty/Repair,What is the warranty period for NovaTech products?,"All genuine NovaTech products come with a 1-year free warranty from the date of purchase. Consumables such as batteries have a separate 6-month warranty. Bring your warranty card or purchase receipt to the nearest service center for repair."
+14,en,Warranty/Repair,Can a product bought abroad be repaired at a Korean service center?,"Since distribution regions differ by country, products from overseas regions may have limited repair support at Korean service centers. Please use the official service center in your country of purchase, or contact customer service with your serial number to check eligibility."
+15,en,Shipping,Which countries do you ship to internationally?,"We ship to a total of 32 countries including the United States, Japan, China, Taiwan, Vietnam, and Germany. You can check the real-time list of available shipping destinations on the checkout page."
+16,en,Shipping,Who pays customs duties for international shipping?,"Customs duties and VAT are generally the responsibility of the recipient, based on the destination country's regulations. Some countries have duty-free thresholds, so please check customs rules in advance."
+17,en,Product Use,My Bluetooth earbuds won't pair with my smartphone.,"Take both earbuds out of the case and hold the button for 5 seconds until the LED blinks alternately blue and white. Then delete the old pairing record in your phone's Bluetooth settings and search again - this resolves most issues."
+18,en,Product Use,How often should I replace the air purifier filter?,"For an average household, we recommend replacing the filter every 3-6 months. If you have pets or live in an area with heavy fine dust, replace it every 2-3 months. Models with a filter-life notification can show remaining life in the app."
+19,en,Account/Payment,I forgot my password.,Click 'Forgot Password' on the login screen and you'll receive a reset link at your registered email. The link is valid for 30 minutes.
+20,en,Account/Payment,What currencies can I use for international payment?,"We support payment in USD, JPY, CNY, and EUR. The KRW-equivalent charge is displayed based on the exchange rate at the time of payment. Additional overseas transaction fees from your card issuer may apply."
+21,ja,返品/返金,購入した製品を返品したいのですが、手順を教えてください。,"商品受け取り後14日以内に、マイページ＞注文履歴から返品申請ができます。商品は未開封または使用痕跡のない状態である必要があり、単純な気変わりによる返品の場合、返送料はお客様負担となります。返品が承認されると3〜5営業日以内に返金が完了します。"
+22,ja,返品/返金,海外で購入した製品も返品できますか?,"はい、海外配送の注文も返品可能です。ただし、国際返送料はお客様負担となり、通関手続きのため国内返品より処理期間が7〜14日ほど長くかかる場合があります。"
+23,ja,保証/修理,製品の保証期間はどのくらいですか?,すべてのNovaTech正規品は購入日から1年間無償保証が提供されます。バッテリーなどの消耗品は保証期間が6か月と別途適用されます。保証書または購入領収書をお持ちの上、最寄りのサービスセンターにて修理受付が可能です。
+24,ja,保証/修理,海外で購入した製品も韓国のASセンターで修理できますか?,"国ごとに流通リージョンが異なるため、海外リージョンの製品は韓国のASセンターでの修理が制限される場合があります。購入された国の公式サービスセンターをご利用いただくか、シリアル番号を添えてカスタマーセンターにお問い合わせください。"
+25,ja,配送,海外配送はどの国まで対応していますか?,"アメリカ、日本、中国、台湾、ベトナム、ドイツなど合計32か国へ配送可能です。配送可能国リストは決済ページでリアルタイムにご確認いただけます。"
+26,ja,配送,海外配送の際、関税は誰が負担しますか?,"関税および付加価値税は、受け取る国の基準に従い、原則として受取人の負担となります。一部の国では免税枠があるため、事前に通関規定をご確認いただくことをお勧めします。"
+27,ja,製品使用,Bluetoothイヤホンがスマートフォンとペアリングできません。,"イヤホンケースから両方のイヤバッドを取り出した状態でボタンを5秒間長押しし、LEDが青と白交互に点滅するか確認してください。その後、スマートフォンのBluetooth設定で既存のペアリング記録を削除し、再度検索するとほとんどの場合解決します。"
+28,ja,製品使用,空気清浄機のフィルター交換周期はどのくらいですか?,"一般家庭の場合、3〜6か月ごとの交換を推奨します。ペットがいる場合や微細粉塵の多い地域では2〜3か月ごとの交換が良いでしょう。フィルター交換通知機能があるモデルはアプリで残り寿命を確認できます。"
+29,ja,アカウント/決済,パスワードを忘れました。,ログイン画面の「パスワードを忘れた方」をクリック後、登録されたメールアドレスに再設定リンクが届きます。リンクは発行後30分間有効です。
+30,ja,アカウント/決済,海外決済時に使用可能な通貨は何ですか?,"USD、JPY、CNY、EURでのお支払いに対応しております。決済時点の為替レートに基づき、円/ウォン換算の請求額が案内されます。カード会社の海外決済手数料が別途発生する場合があります。"
+31,zh,退货/退款,我想退还购买的产品,请问流程是怎样的?,"收到商品后14天内,您可以在""我的页面 > 订单记录""中申请退货。商品须为未拆封或无使用痕迹的状态。若为单纯的不满意退货,退货运费由客户承担。退货获批后,3~5个工作日内完成退款。"
+32,zh,退货/退款,我在海外购买的产品也可以退货吗?,"可以,国际订单也支持退货。但国际退货运费由客户承担,且由于清关手续,处理时间可能比国内退货多花7~14天。"
+33,zh,保修/维修,产品的保修期是多久?,所有NovaTech正品自购买之日起提供1年免费保修。电池等消耗品的保修期另定为6个月。请携带保修卡或购买收据前往最近的服务中心办理维修。
+34,zh,保修/维修,在海外购买的产品可以在韩国售后中心维修吗?,"由于各国销售区域不同,海外地区版本的产品在韩国售后中心的维修可能受限。请使用您购买所在国的官方服务中心,或联系客服并提供序列号以确认是否可以维修。"
+35,zh,配送,国际配送支持哪些国家?,支持配送至美国、日本、中国、台湾、越南、德国等共32个国家。可在结算页面实时查看可配送国家列表。
+36,zh,配送,国际配送的关税由谁承担?,"关税及增值税原则上由收件人根据目的地国家的规定承担。部分国家设有免税额度,建议提前确认当地通关规定。"
+37,zh,产品使用,蓝牙耳机无法与智能手机配对。,"请将两只耳机从充电盒中取出,长按按钮5秒,确认LED灯是否交替闪烁蓝色和白色。然后在手机蓝牙设置中删除原有配对记录并重新搜索,大多数情况下即可解决。"
+38,zh,产品使用,空气净化器滤网多久更换一次?,"一般家庭建议每3~6个月更换一次滤网。如果家中有宠物或所在地区细颗粒物较多,建议每2~3个月更换一次。带有滤网寿命提醒功能的型号可在App中查看剩余寿命。"
+39,zh,账户/支付,我忘记密码了。,"请在登录页面点击""忘记密码"",系统会向您注册的邮箱发送重置链接。该链接在发出后30分钟内有效。"
+40,zh,账户/支付,国际支付支持哪些货币?,支持使用USD、JPY、CNY、EUR付款。系统会根据支付时的汇率显示对应的本币金额。您的发卡行可能会另外收取海外交易手续费。
